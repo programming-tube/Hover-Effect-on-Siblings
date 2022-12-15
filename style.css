@@ -1,0 +1,22 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(212, 249, 255);
+}
+.container {
+    display: flex;
+    gap: 10px;
+}
+.card {
+    background: rgb(204, 4, 117);
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0;
+    transition: 300ms ease-in-out;
+}
+.container:hover > :not(:hover) {
+    opacity: .4;
+}
